@@ -43,9 +43,3 @@ jobs:
           with:
             username: ${{ secrets.DockerUsername }}
             password: ${{ secrets.DockerPassword }}
-        -
-          name: Build and push
-          uses: docker/build-push-action@v5
-          with:
-            push: true
-            tags: shrutipp/snakegame:latest
